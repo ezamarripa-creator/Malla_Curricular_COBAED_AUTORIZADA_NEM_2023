@@ -24,7 +24,7 @@
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -69,7 +69,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 25px;
         }
 
@@ -79,17 +79,20 @@
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
             border-top: 5px solid var(--secondary-color);
+            display: flex;
+            flex-direction: column;
         }
 
         .card h2 {
             color: var(--primary-color);
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-top: 0;
             border-bottom: 1px solid #eee;
             padding-bottom: 10px;
-            height: 3em;
+            min-height: 2.5em;
             display: flex;
             align-items: center;
+            text-transform: uppercase;
         }
 
         .semester-box {
@@ -101,8 +104,10 @@
             color: var(--secondary-color);
             display: block;
             margin-bottom: 5px;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
+            border-left: 3px solid var(--secondary-color);
+            padding-left: 8px;
         }
 
         ul {
@@ -112,23 +117,26 @@
         }
 
         li {
-            padding: 4px 0;
-            font-size: 0.9rem;
+            padding: 6px 0;
+            font-size: 0.85rem;
             border-bottom: 1px dotted #eee;
+            line-height: 1.3;
         }
 
         li span {
             font-weight: bold;
             color: #7f8c8d;
             margin-right: 5px;
+            white-space: nowrap;
         }
 
         footer {
             text-align: center;
             margin-top: 50px;
-            padding: 20px;
+            padding: 30px;
             font-size: 0.9rem;
             color: #7f8c8d;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
@@ -138,14 +146,15 @@
     <header>
         <h1>NEM 2023 - Unidades de Aprendizaje</h1>
         <p class="subtitle">Colegio de Bachilleres del Estado de Durango | Generaciones 2023-2026 y 2024-2027</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Referencia: Oficio No. DGCB/1614/2025</p>
     </header>
 
     <div class="download-section">
         <a href="https://drive.google.com/file/d/1P_xVsDufwkBSrxhgy5uFwdlpcXG6kW-E/view?usp=drive_link" target="_blank" class="btn-download">
-            📄 Descargar MAPAS CURRICULARES AUTORIZADOS POR DGB NEM 2023
+            📄 MAPAS CURRICULARES DGB
         </a>
         <a href="https://drive.google.com/file/d/176pMKPyY3zhcMhv4Y88n7mPgfUfgOTGs/view?usp=drive_link" target="_blank" class="btn-download">
-            📥 Descargar Documento OPTATIVAS EN COBAED
+            📥 DOCUMENTO OPTATIVAS COBAED
         </a>
     </div>
 
@@ -158,7 +167,7 @@
                     <li><span>5301</span> Taller de Pensamiento Variacional I</li>
                     <li><span>5302</span> Inglés V</li>
                     <li><span>5304</span> Fundamentos de la Administración I</li>
-                    <li><span>5312</span> Economía I</li>
+                    <li><span>5312</span> Economía I: La Función de los Agentes Económicos</li>
                 </ul>
             </div>
             <div class="semester-box">
@@ -167,7 +176,7 @@
                     <li><span>6301</span> Taller de Pensamiento Variacional II</li>
                     <li><span>6302</span> Inglés VI</li>
                     <li><span>6304</span> Fundamentos de la Administración II</li>
-                    <li><span>6312</span> Economía II</li>
+                    <li><span>6312</span> Economía II: Política Económica y Pública</li>
                 </ul>
             </div>
         </div>
@@ -195,14 +204,36 @@
         </div>
 
         <div class="card">
-            <h2>5. Contabilidad</h2>
+            <h2>3. Asistencia Infantil</h2>
+            <div class="semester-box">
+                <span class="semester-title">5° Semestre</span>
+                <ul>
+                    <li><span>5301</span> Taller de Pensamiento Variacional I</li>
+                    <li><span>5302</span> Inglés V</li>
+                    <li><span>5303</span> Psicología I</li>
+                    <li><span>5307</span> Comunicación y Sociedad I</li>
+                </ul>
+            </div>
+            <div class="semester-box">
+                <span class="semester-title">6° Semestre</span>
+                <ul>
+                    <li><span>6301</span> Taller de Pensamiento Variacional II</li>
+                    <li><span>6302</span> Inglés VI</li>
+                    <li><span>6303</span> Psicología II</li>
+                    <li><span>6307</span> Comunicación y Sociedad II</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>4. Auxiliar Minero</h2>
             <div class="semester-box">
                 <span class="semester-title">5° Semestre</span>
                 <ul>
                     <li><span>5301</span> Taller de Pensamiento Variacional I</li>
                     <li><span>5302</span> Inglés V</li>
                     <li><span>5304</span> Fundamentos de la Administración I</li>
-                    <li><span>5312</span> Economía I</li>
+                    <li><span>5308</span> Análisis de Fenómenos Físicos I</li>
                 </ul>
             </div>
             <div class="semester-box">
@@ -211,7 +242,51 @@
                     <li><span>6301</span> Taller de Pensamiento Variacional II</li>
                     <li><span>6302</span> Inglés VI</li>
                     <li><span>6304</span> Fundamentos de la Administración II</li>
-                    <li><span>6312</span> Economía II</li>
+                    <li><span>6308</span> Análisis de Fenómenos Físicos II</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>5. Contabilidad</h2>
+            <div class="semester-box">
+                <span class="semester-title">5° Semestre</span>
+                <ul>
+                    <li><span>5301</span> Taller de Pensamiento Variacional I</li>
+                    <li><span>5302</span> Inglés V</li>
+                    <li><span>5304</span> Fundamentos de la Administración I</li>
+                    <li><span>5312</span> Economía I: La Función de los Agentes Económicos</li>
+                </ul>
+            </div>
+            <div class="semester-box">
+                <span class="semester-title">6° Semestre</span>
+                <ul>
+                    <li><span>6301</span> Taller de Pensamiento Variacional II</li>
+                    <li><span>6302</span> Inglés VI</li>
+                    <li><span>6304</span> Fundamentos de la Administración II</li>
+                    <li><span>6312</span> Economía II: Política Económica y Pública</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>6. Dibujo Arquitectónico y de Construcción</h2>
+            <div class="semester-box">
+                <span class="semester-title">5° Semestre</span>
+                <ul>
+                    <li><span>5301</span> Taller de Pensamiento Variacional I</li>
+                    <li><span>5302</span> Inglés V</li>
+                    <li><span>5308</span> Análisis de Fenómenos Físicos I</li>
+                    <li><span>5311</span> Taller de Probabilidad y Estadística I</li>
+                </ul>
+            </div>
+            <div class="semester-box">
+                <span class="semester-title">6° Semestre</span>
+                <ul>
+                    <li><span>6301</span> Taller de Pensamiento Variacional II</li>
+                    <li><span>6302</span> Inglés VI</li>
+                    <li><span>6308</span> Análisis de Fenómenos Físicos II</li>
+                    <li><span>6311</span> Taller de Probabilidad y Estadística II</li>
                 </ul>
             </div>
         </div>
@@ -223,7 +298,7 @@
                 <ul>
                     <li><span>5301</span> Taller de Pensamiento Variacional I</li>
                     <li><span>5302</span> Inglés V</li>
-                    <li><span>5305</span> Análisis de Fenómenos Biológicos</li>
+                    <li><span>5305</span> Análisis de Fenómenos y Procesos Biológicos</li>
                     <li><span>5306</span> Salud Integral I</li>
                 </ul>
             </div>
@@ -239,13 +314,57 @@
         </div>
 
         <div class="card">
+            <h2>8. Interpretación y Traducción del Inglés</h2>
+            <div class="semester-box">
+                <span class="semester-title">5° Semestre</span>
+                <ul>
+                    <li><span>5301</span> Taller de Pensamiento Variacional I</li>
+                    <li><span>5302</span> Inglés V</li>
+                    <li><span>5307</span> Comunicación y Sociedad I</li>
+                    <li><span>5310</span> Temas Selectos de Ciencias Sociales I</li>
+                </ul>
+            </div>
+            <div class="semester-box">
+                <span class="semester-title">6° Semestre</span>
+                <ul>
+                    <li><span>6301</span> Taller de Pensamiento Variacional II</li>
+                    <li><span>6302</span> Inglés VI</li>
+                    <li><span>6307</span> Comunicación y Sociedad II</li>
+                    <li><span>6310</span> Temas Selectos de Ciencias Sociales II</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>9. Intervención en la Educación Obligatoria</h2>
+            <div class="semester-box">
+                <span class="semester-title">5° Semestre</span>
+                <ul>
+                    <li><span>5301</span> Taller de Pensamiento Variacional I</li>
+                    <li><span>5302</span> Inglés V</li>
+                    <li><span>5303</span> Psicología I</li>
+                    <li><span>5307</span> Comunicación y Sociedad I</li>
+                </ul>
+            </div>
+            <div class="semester-box">
+                <span class="semester-title">6° Semestre</span>
+                <ul>
+                    <li><span>6301</span> Taller de Pensamiento Variacional II</li>
+                    <li><span>6302</span> Inglés VI</li>
+                    <li><span>6303</span> Psicología II</li>
+                    <li><span>6307</span> Comunicación y Sociedad II</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <h2>10. Laboratorista Clínico</h2>
             <div class="semester-box">
                 <span class="semester-title">5° Semestre</span>
                 <ul>
                     <li><span>5301</span> Taller de Pensamiento Variacional I</li>
                     <li><span>5302</span> Inglés V</li>
-                    <li><span>5305</span> Análisis de Fenómenos Biológicos</li>
+                    <li><span>5305</span> Análisis de Fenómenos y Procesos Biológicos</li>
                     <li><span>5306</span> Salud Integral I</li>
                 </ul>
             </div>
@@ -256,6 +375,28 @@
                     <li><span>6302</span> Inglés VI</li>
                     <li><span>6305</span> Temas Selectos de Biología</li>
                     <li><span>6306</span> Salud Integral II</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>11. Laboratorista Químico</h2>
+            <div class="semester-box">
+                <span class="semester-title">5° Semestre</span>
+                <ul>
+                    <li><span>5301</span> Taller de Pensamiento Variacional I</li>
+                    <li><span>5302</span> Inglés V</li>
+                    <li><span>5305</span> Análisis de Fenómenos Biológicos</li>
+                    <li><span>5309</span> Flujo de Materia y Energía I</li>
+                </ul>
+            </div>
+            <div class="semester-box">
+                <span class="semester-title">6° Semestre</span>
+                <ul>
+                    <li><span>6301</span> Taller de Pensamiento Variacional II</li>
+                    <li><span>6302</span> Inglés VI</li>
+                    <li><span>6305</span> Temas Selectos de Biología</li>
+                    <li><span>6309</span> Flujo de Materia y Energía II</li>
                 </ul>
             </div>
         </div>
@@ -281,10 +422,55 @@
                 </ul>
             </div>
         </div>
+
+        <div class="card">
+            <h2>13. Servicio de Alimentación y Nutrición</h2>
+            <div class="semester-box">
+                <span class="semester-title">5° Semestre</span>
+                <ul>
+                    <li><span>5301</span> Taller de Pensamiento Variacional I</li>
+                    <li><span>5302</span> Inglés V</li>
+                    <li><span>5305</span> Análisis de Fenómenos Biológicos</li>
+                    <li><span>5306</span> Salud Integral I</li>
+                </ul>
+            </div>
+            <div class="semester-box">
+                <span class="semester-title">6° Semestre</span>
+                <ul>
+                    <li><span>6301</span> Taller de Pensamiento Variacional II</li>
+                    <li><span>6302</span> Inglés VI</li>
+                    <li><span>6305</span> Temas Selectos de Biología</li>
+                    <li><span>6306</span> Salud Integral II</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>14. Tecnologías de Información y Comunicación</h2>
+            <div class="semester-box">
+                <span class="semester-title">5° Semestre</span>
+                <ul>
+                    <li><span>5301</span> Taller de Pensamiento Variacional I</li>
+                    <li><span>5302</span> Inglés V</li>
+                    <li><span>5307</span> Comunicación y Sociedad I</li>
+                    <li><span>5308</span> Análisis de Fenómenos Físicos I</li>
+                </ul>
+            </div>
+            <div class="semester-box">
+                <span class="semester-title">6° Semestre</span>
+                <ul>
+                    <li><span>6301</span> Taller de Pensamiento Variacional II</li>
+                    <li><span>6302</span> Inglés VI</li>
+                    <li><span>6307</span> Comunicación y Sociedad II</li>
+                    <li><span>6308</span> Análisis de Fenómenos Físicos II</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <footer>
-        <p>COBAED - Carretera al Pueblito #112, Durango, Dgo. | Tel: (618) 137 3900</p>
+        <p>COBAED - Colegio de Bachilleres del Estado de Durango</p>
+        <p>Carretera al Pueblito #112, Durango, Dgo. | Tel: (618) 137 3900</p>
     </footer>
 </div>
 
